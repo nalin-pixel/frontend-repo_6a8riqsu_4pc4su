@@ -113,7 +113,7 @@ function ChatWidget() {
               <button
                 key={q}
                 onClick={() => {
-                  const url = `https://wa.me/+92-3111035944?text=${encodeURIComponent(q)}`;
+                  const url = `https://wa.me/923111035944?text=${encodeURIComponent(q)}`;
                   window.open(url, "_blank");
                 }}
                 className="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-left hover:bg-white/10"
@@ -123,7 +123,7 @@ function ChatWidget() {
             ))}
           </div>
           <a
-            href="https://wa.me/+92-3111035944?text=Hi%20Umais,%20I%20found%20your%20portfolio%20and%20want%20to%20discuss%20a%20project."
+            href="https://wa.me/923111035944?text=Hi%20Umais,%20I%20found%20your%20portfolio%20and%20want%20to%20discuss%20a%20project."
             target="_blank"
             rel="noreferrer"
             className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-500 px-3 py-2 font-medium text-white hover:bg-emerald-600"
@@ -145,7 +145,7 @@ function ChatWidget() {
 function FloatingWhatsApp() {
   return (
     <a
-      href="https://wa.me/+92-3111035944?text=Hi%20Umais,%20I%20found%20your%20portfolio%20and%20want%20to%20discuss%20a%20project."
+      href="https://wa.me/923111035944?text=Hi%20Umais,%20I%20found%20your%20portfolio%20and%20want%20to%20discuss%20a%20project."
       target="_blank"
       rel="noreferrer"
       className="group fixed bottom-6 left-6 z-40 inline-flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/30 hover:bg-emerald-600"

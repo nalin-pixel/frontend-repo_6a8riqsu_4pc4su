@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="home" className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-[#071a2e] via-[#0a2036] to-[#041422] text-white">
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/VJLoxp84lCdVfdZu/scene.splinecode"
+          scene="https://prod.spline.design/4cHQr84zOGAHOehh/scene.splinecode"
           style={{ width: "100%", height: "100%" }}
         />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_30%,rgba(34,211,238,0.12),transparent),radial-gradient(40%_40%_at_80%_70%,rgba(14,165,233,0.1),transparent)]" />

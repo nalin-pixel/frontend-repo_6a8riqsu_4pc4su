@@ -108,7 +108,7 @@ export default function TestimonialsContact() {
                 {status === "sent" && "Sent!"}
               </button>
               <a
-                href="https://wa.me/+92-3111035944?text=Hi%20Umais,%20I%20found%20your%20portfolio%20and%20want%20to%20discuss%20a%20project."
+                href="https://wa.me/923111035944?text=Hi%20Umais,%20I%20found%20your%20portfolio%20and%20want%20to%20discuss%20a%20project."
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/25 transition-colors hover:bg-emerald-600"
@@ -119,13 +119,13 @@ export default function TestimonialsContact() {
           </motion.form>
 
           <div className="mt-6 flex flex-wrap items-center gap-3 text-white/70">
-            <a href="https://github.com" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm backdrop-blur hover:bg-white/10">
+            <a href="https://github.com/Muhammad-umais" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm backdrop-blur hover:bg-white/10">
               <Github size={16} /> GitHub
             </a>
-            <a href="https://linkedin.com" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm backdrop-blur hover:bg-white/10">
+            <a href="https://www.linkedin.com/in/umais-imran-739817172/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm backdrop-blur hover:bg-white/10">
               <Linkedin size={16} /> LinkedIn
             </a>
-            <a href="mailto:hello@example.com" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm backdrop-blur hover:bg-white/10">
+            <a href="mailto:umaisimran96@gmail.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm backdrop-blur hover:bg-white/10">
               <Mail size={16} /> Email
             </a>
           </div>

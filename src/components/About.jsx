@@ -23,13 +23,22 @@ export default function About() {
           <p className="text-white/80">
             I’m Muhammad Umais, a Shopify and web developer with over 3 years of experience creating high-performing, responsive, and modern online stores. I specialize in Shopify theme customization, Liquid coding, and performance optimization. My top priority is delivering quality work and ensuring client satisfaction.
           </p>
+          {/* Abstract animated card instead of any personal image */}
           <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10">
-            <img
-              src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1600&auto=format&fit=crop"
-              alt="Muhammad Umais portrait"
-              className="h-full w-full object-cover"
+            <div className="absolute inset-0 bg-gradient-to-tr from-slate-900 via-slate-800 to-slate-900" />
+            <motion.div
+              aria-hidden
+              className="absolute -left-20 -top-24 h-56 w-56 rounded-full bg-gradient-to-tr from-cyan-500/30 to-sky-400/20 blur-3xl"
+              animate={{ x: [0, 20, 0], y: [0, 10, 0], opacity: [0.6, 0.9, 0.6] }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-slate-950/30 via-transparent to-slate-900/30" />
+            <motion.div
+              aria-hidden
+              className="absolute -bottom-16 -right-16 h-64 w-64 rounded-full bg-gradient-to-tr from-fuchsia-500/20 to-violet-400/20 blur-3xl"
+              animate={{ x: [0, -15, 0], y: [0, -10, 0], opacity: [0.5, 0.8, 0.5] }}
+              transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
+            />
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_40%,rgba(34,211,238,0.08),transparent)]" />
           </div>
         </motion.div>
 

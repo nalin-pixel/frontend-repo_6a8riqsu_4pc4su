@@ -1,25 +1,25 @@
 import { motion } from "framer-motion";
-import { Star, Send, Github, Linkedin, Mail } from "lucide-react";
+import { Star, Send, Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 import { useState } from "react";
 
 const testimonials = [
   {
-    name: "Amelia R.",
-    role: "Founder, Boutique Brand",
+    name: "Ayesha K.",
+    role: "Founder, DTC Brand",
     quote:
-      "An absolute pro. Our Shopify store feels premium and loads incredibly fast. Conversion went up immediately.",
+      "Umais delivered a fast, responsive Shopify store beyond expectations. Highly recommend!",
   },
   {
-    name: "Daniel P.",
-    role: "Head of Growth, SaaS",
+    name: "Noah L.",
+    role: "E‑commerce Lead",
     quote:
-      "Clean design, thoughtful motion, and attention to detail. Seamless collaboration end‑to‑end.",
+      "From theme customization to speed optimization, everything was handled professionally and on time.",
   },
   {
-    name: "Priya S.",
-    role: "Marketing Lead",
+    name: "Sofia R.",
+    role: "Marketing Manager",
     quote:
-      "Consistently delivers above expectations. The site scores 95+ on CWV and looks stunning.",
+      "Clear communication, pixel‑perfect execution, and measurable performance gains.",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function TestimonialsContact() {
 
   return (
     <section id="contact" className="relative w-full bg-slate-950 py-24 text-white">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_20%_20%,rgba(20,184,166,0.12),transparent),radial-gradient(50%_50%_at_80%_60%,rgba(99,102,241,0.12),transparent)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_20%_20%,rgba(34,211,238,0.12),transparent),radial-gradient(50%_50%_at_80%_60%,rgba(99,102,241,0.12),transparent)]" />
       <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 lg:grid-cols-2">
         <div>
           <h2 className="text-3xl font-bold md:text-4xl">What Clients Say</h2>
@@ -96,19 +96,29 @@ export default function TestimonialsContact() {
               placeholder="Project details, goals, and timeline..."
               className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/50 outline-none backdrop-blur focus:ring-2 focus:ring-cyan-500"
             />
-            <button
-              type="submit"
-              disabled={status !== "idle"}
-              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/25 transition-transform hover:scale-[1.02] disabled:opacity-60"
-            >
-              <Send size={16} />
-              {status === "idle" && "Send Message"}
-              {status === "loading" && "Sending..."}
-              {status === "sent" && "Sent!"}
-            </button>
+            <div className="flex flex-wrap items-center gap-3">
+              <button
+                type="submit"
+                disabled={status !== "idle"}
+                className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-500/25 transition-transform hover:scale-[1.02] disabled:opacity-60"
+              >
+                <Send size={16} />
+                {status === "idle" && "Send Message"}
+                {status === "loading" && "Sending..."}
+                {status === "sent" && "Sent!"}
+              </button>
+              <a
+                href="https://wa.me/+92-3111035944?text=Hi%20Umais,%20I%20found%20your%20portfolio%20and%20want%20to%20discuss%20a%20project."
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/25 transition-colors hover:bg-emerald-600"
+              >
+                <MessageCircle size={16} /> Send Message on WhatsApp
+              </a>
+            </div>
           </motion.form>
 
-          <div className="mt-6 flex items-center gap-3 text-white/70">
+          <div className="mt-6 flex flex-wrap items-center gap-3 text-white/70">
             <a href="https://github.com" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm backdrop-blur hover:bg-white/10">
               <Github size={16} /> GitHub
             </a>
@@ -124,11 +134,11 @@ export default function TestimonialsContact() {
 
       <div className="relative mx-auto max-w-7xl px-6">
         <footer className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 py-8 text-sm text-white/60 md:flex-row">
-          <div>© {new Date().getFullYear()} Your Name. All rights reserved.</div>
+          <div>© 2025 Muhammad Umais | All Rights Reserved</div>
           <div className="flex items-center gap-6">
             <a href="#home" className="hover:text-white">Home</a>
             <a href="#about" className="hover:text-white">About</a>
-            <a href="#work" className="hover:text-white">Work</a>
+            <a href="#work" className="hover:text-white">Projects</a>
             <a href="#services" className="hover:text-white">Services</a>
             <a href="#contact" className="hover:text-white">Contact</a>
           </div>

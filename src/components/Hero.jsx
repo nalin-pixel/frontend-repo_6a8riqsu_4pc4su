@@ -3,13 +3,14 @@ import Spline from "@splinetool/react-spline";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-white">
+    <section id="home" className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-[#071a2e] via-[#0a2036] to-[#041422] text-white">
       <div className="absolute inset-0">
         <Spline
           scene="https://prod.spline.design/VJLoxp84lCdVfdZu/scene.splinecode"
           style={{ width: "100%", height: "100%" }}
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-slate-900/40" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_30%,rgba(34,211,238,0.12),transparent),radial-gradient(40%_40%_at_80%_70%,rgba(14,165,233,0.1),transparent)]" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#041422]/80 via-transparent to-transparent" />
       </div>
 
       <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-6 text-center">
@@ -25,7 +26,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            PORTFOLIO • MODERN • INTERACTIVE
+            SHOPIFY • PERFORMANCE • MODERN
           </motion.span>
 
           <motion.h1
@@ -34,16 +35,16 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7 }}
           >
-            Hi, I’m <span className="bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">Your Name</span>
+            <span className="text-white">Muhammad Umais</span>
           </motion.h1>
 
           <motion.p
-            className="mx-auto max-w-2xl text-balance text-base text-white/80 sm:text-lg"
+            className="mx-auto max-w-2xl text-balance text-base text-cyan-100 sm:text-lg"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
           >
-            Shopify & Web Developer crafting elegant, performant experiences with modern tech, smooth animations, and delightful micro‑interactions.
+            Shopify & Web Developer building fast, responsive, and high‑converting stores. Clean code, smooth motion, and a focus on results.
           </motion.p>
 
           <motion.div
@@ -54,7 +55,7 @@ export default function Hero() {
           >
             <a
               href="#contact"
-              className="group relative overflow-hidden rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/25 transition-transform duration-300 hover:scale-[1.03]"
+              className="group relative overflow-hidden rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-500/30 transition-transform duration-300 hover:scale-[1.03]"
             >
               <span className="relative z-10">Hire Me</span>
               <span className="pointer-events-none absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-0" />
@@ -63,7 +64,7 @@ export default function Hero() {
               href="#work"
               className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-white/90 backdrop-blur transition-colors hover:bg-white/10"
             >
-              View Work
+              View Projects
             </a>
           </motion.div>
         </motion.div>

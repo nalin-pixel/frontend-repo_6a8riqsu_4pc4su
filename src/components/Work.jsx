@@ -4,31 +4,45 @@ import { ExternalLink, ZoomIn } from "lucide-react";
 
 const projects = [
   {
-    title: "Ecommerce Redesign",
+    title: "Shopify Fashion Store",
     image:
-      "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&w=1400&auto=format&fit=crop",
-    tags: ["Shopify", "Design", "Performance"],
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1600&auto=format&fit=crop",
+    tags: ["Shopify", "Theme", "Speed"],
     link: "#",
   },
   {
-    title: "SaaS Marketing Site",
+    title: "Cosmetics DTC Brand",
     image:
-      "https://images.unsplash.com/photo-1555421689-43cad7100751?q=80&w=1400&auto=format&fit=crop",
-    tags: ["Next.js", "Motion", "SEO"],
+      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?q=80&w=1600&auto=format&fit=crop",
+    tags: ["Design", "Conversion", "UX"],
     link: "#",
   },
   {
-    title: "Brand Portfolio",
+    title: "Tech Accessories Store",
     image:
-      "https://images.unsplash.com/photo-1542393545-10f5cde2c810?q=80&w=1400&auto=format&fit=crop",
-    tags: ["Design", "Animation", "CMS"],
+      "https://images.unsplash.com/photo-1512446816042-444d641267d4?q=80&w=1600&auto=format&fit=crop",
+    tags: ["Shopify", "Liquid", "Apps"],
     link: "#",
   },
   {
-    title: "Automation Dashboard",
+    title: "Minimal Agency Website",
     image:
-      "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1400&auto=format&fit=crop",
-    tags: ["Automation", "APIs", "UI"],
+      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1600&auto=format&fit=crop",
+    tags: ["Web Design", "SEO", "Motion"],
+    link: "#",
+  },
+  {
+    title: "Gourmet Storefront",
+    image:
+      "https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=1600&auto=format&fit=crop",
+    tags: ["Shopify", "Customization", "Speed"],
+    link: "#",
+  },
+  {
+    title: "Home Decor Brand",
+    image:
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop",
+    tags: ["Design", "UX", "Conversion"],
     link: "#",
   },
 ];
@@ -38,18 +52,18 @@ export default function Work() {
 
   return (
     <section id="work" className="relative w-full bg-slate-950 py-24 text-white">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_0%,rgba(14,165,233,0.08),transparent),radial-gradient(80%_60%_at_80%_40%,rgba(167,139,250,0.08),transparent)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_0%,rgba(14,165,233,0.08),transparent),radial-gradient(80%_60%_at_80%_40%,rgba(34,211,238,0.08),transparent)]" />
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="mb-10 flex items-end justify-between">
           <div>
-            <h2 className="text-3xl font-bold md:text-4xl">Selected Work</h2>
-            <p className="mt-2 text-white/70">A mix of commerce, marketing, and product UI.</p>
+            <h2 className="text-3xl font-bold md:text-4xl">Professional Projects</h2>
+            <p className="mt-2 text-white/70">Realistic Shopify and web design case studies with clean execution.</p>
           </div>
           <a
             href="#contact"
             className="hidden rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 backdrop-blur transition-colors hover:bg-white/10 md:block"
           >
-            Let’s build yours
+            Start your project
           </a>
         </div>
 
@@ -87,7 +101,7 @@ export default function Work() {
                   </button>
                   <a
                     href={p.link}
-                    className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-violet-500 text-white shadow-lg shadow-violet-500/25 transition hover:opacity-90"
+                    className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-sky-500 to-cyan-400 text-white shadow-lg shadow-cyan-500/25 transition hover:opacity-90"
                   >
                     <ExternalLink size={18} />
                   </a>

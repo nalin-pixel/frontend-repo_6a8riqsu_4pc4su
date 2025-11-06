@@ -1,42 +1,42 @@
 import { motion } from "framer-motion";
-import { Rocket, Palette, Search, Workflow } from "lucide-react";
+import { Rocket, Wrench, Gauge, MonitorSmartphone } from "lucide-react";
 
 const services = [
   {
-    title: "Shopify Development",
-    desc: "Custom themes, high-performance storefronts, and conversions in mind.",
+    title: "Shopify Store Setup",
+    desc: "End‑to‑end setup with products, collections, payments, and essential apps.",
     icon: Rocket,
-    gradient: "from-cyan-500 to-sky-500",
+    gradient: "from-sky-500 to-cyan-400",
   },
   {
-    title: "Website Design",
-    desc: "Modern, elegant interfaces with systems-driven typography and layout.",
-    icon: Palette,
+    title: "Theme Customization",
+    desc: "Pixel‑perfect layouts, Liquid tweaks, and bespoke sections that match your brand.",
+    icon: Wrench,
     gradient: "from-violet-500 to-fuchsia-500",
   },
   {
-    title: "SEO & Analytics",
-    desc: "Technical SEO, Core Web Vitals, and insight-driven growth.",
-    icon: Search,
-    gradient: "from-amber-500 to-orange-500",
+    title: "Store Speed Optimization",
+    desc: "Core Web Vitals, image optimization, app bloat reduction, and caching strategy.",
+    icon: Gauge,
+    gradient: "from-emerald-500 to-teal-500",
   },
   {
-    title: "Automation",
-    desc: "Workflows that connect apps, APIs, and data to save hours.",
-    icon: Workflow,
-    gradient: "from-emerald-500 to-teal-500",
+    title: "Responsive Web Design",
+    desc: "Mobile‑first, accessible, and fast interfaces that convert on every device.",
+    icon: MonitorSmartphone,
+    gradient: "from-amber-500 to-orange-500",
   },
 ];
 
 export default function Services() {
   return (
     <section id="services" className="relative w-full bg-slate-950 py-24 text-white">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_100%,rgba(99,102,241,0.12),transparent)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_100%,rgba(56,189,248,0.12),transparent)]" />
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="mb-10 flex items-end justify-between">
           <div>
             <h2 className="text-3xl font-bold md:text-4xl">Services</h2>
-            <p className="mt-2 text-white/70">Practical solutions with a premium finish.</p>
+            <p className="mt-2 text-white/70">Focused, high‑impact offerings for Shopify and the web.</p>
           </div>
         </div>
 

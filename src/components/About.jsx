@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "Shopify", level: 90, color: "from-emerald-400 to-teal-400" },
-  { name: "React / Next.js", level: 88, color: "from-cyan-400 to-blue-400" },
-  { name: "UI/UX & Motion", level: 86, color: "from-violet-400 to-fuchsia-400" },
-  { name: "SEO & Performance", level: 82, color: "from-amber-400 to-orange-400" },
+  { name: "Shopify", level: 95, color: "from-cyan-400 to-sky-400" },
+  { name: "Web Design", level: 92, color: "from-blue-400 to-cyan-300" },
+  { name: "Liquid", level: 90, color: "from-teal-400 to-emerald-300" },
+  { name: "SEO Optimization", level: 88, color: "from-fuchsia-400 to-violet-400" },
 ];
 
 export default function About() {
@@ -19,15 +19,14 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="space-y-6"
         >
-          <h2 className="text-3xl font-bold md:text-4xl">About Me</h2>
+          <h2 className="text-3xl font-bold md:text-4xl">About</h2>
           <p className="text-white/80">
-            I’m a developer and designer focused on building premium Shopify stores and web experiences with
-            thoughtful details, motion, and performance. I transform ideas into polished digital products.
+            I’m Muhammad Umais, a Shopify and web developer with over 3 years of experience creating high-performing, responsive, and modern online stores. I specialize in Shopify theme customization, Liquid coding, and performance optimization. My top priority is delivering quality work and ensuring client satisfaction.
           </p>
           <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10">
             <img
-              src="https://images.unsplash.com/photo-1514790193030-c89d266d5a9d?q=80&w=1200&auto=format&fit=crop"
-              alt="Portrait"
+              src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1600&auto=format&fit=crop"
+              alt="Muhammad Umais portrait"
               className="h-full w-full object-cover"
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-slate-950/30 via-transparent to-slate-900/30" />
@@ -41,8 +40,15 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="space-y-6"
         >
-          <h3 className="text-xl font-semibold text-white/90">Core Skills</h3>
-          <div className="space-y-5">
+          <h3 className="text-xl font-semibold text-white/90">Core Skills & Experience</h3>
+          <div className="grid grid-cols-2 gap-4 text-sm text-white/70">
+            <Stat kpi="3+" label="Years Experience" />
+            <Stat kpi="10+" label="Projects Completed" />
+            <Stat kpi="100%" label="Client Satisfaction" />
+            <Stat kpi="Performance" label="Optimized" />
+          </div>
+
+          <div className="mt-6 space-y-5">
             {skills.map((s) => (
               <div key={s.name} className="space-y-2">
                 <div className="flex items-center justify-between text-sm">
@@ -60,13 +66,6 @@ export default function About() {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="mt-8 grid grid-cols-2 gap-4 text-sm text-white/70">
-            <Stat kpi="5+" label="Years Experience" />
-            <Stat kpi="40+" label="Projects Delivered" />
-            <Stat kpi="98%" label="Client Satisfaction" />
-            <Stat kpi="<1s" label="Avg. LCP" />
           </div>
         </motion.div>
       </div>
